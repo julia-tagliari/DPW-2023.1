@@ -1,0 +1,57 @@
+
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow:hidden; 
+        background-color: black;
+        position: sticky;
+        top: 0;
+        
+    }
+    nav li a{
+        float: left;
+        display: inline;
+        text-decoration: none;
+        color: aliceblue;
+        text-align: center;
+        padding: 20px 25px ;
+    }
+
+    nav li a:hover {
+        background-color:rgb(248, 223, 0);
+        color: black;
+    }
+
+    .active {
+        background-color:rgb(248, 223, 0);
+        color: black;
+    }
+
+    body{
+        background-color: rgb(255, 248, 182);
+        font-family: Arial, Helvetica, sans-serif; 
+    }
+    
+    .center {
+        width: 70%;
+        text-align: justify;
+        border: 3px white;
+    }
+
+    .textocentral {
+        position: relative;
+        width: 80%;
+        font-family: "Arial";
+        font-size: large;
+        padding: 1%;
+        text-align: left;  
+  
+    }
+
+    .primeira {
+        position: absolute;
+        top: 18.5%;
+        right: 1%;
+        float:right;
+    }
