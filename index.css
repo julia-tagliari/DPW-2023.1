@@ -1,57 +1,99 @@
 
-    nav ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow:hidden; 
-        background-color: black;
-        position: sticky;
-        top: 0;
-        
-    }
-    nav li a{
-        float: left;
-        display: inline;
-        text-decoration: none;
-        color: aliceblue;
-        text-align: center;
-        padding: 20px 25px ;
-    }
+header{
+    text-align: center; 
+    position: static;
+    width: 100%;
+    background-color:rgb(255, 248, 182);
 
-    nav li a:hover {
-        background-color:rgb(248, 223, 0);
-        color: black;
-    }
 
-    .active {
-        background-color:rgb(248, 223, 0);
-        color: black;
-    }
+}
 
-    body{
-        background-color: rgb(255, 248, 182);
-        font-family: Arial, Helvetica, sans-serif; 
-    }
+.titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow:hidden; 
+    background-color: black;
+    top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+
+}
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 25px ;
+}
+
+nav li a:hover {
+    background-color:rgb(248, 223, 0);
+    color: black;
+}
+
+.active {
+    background-color:rgb(248, 223, 0);
+    color: black;
+}
+
+body{
+    background-color: rgb(255, 248, 182);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+article{
+    background-color: black;
+    color: aliceblue;
+    padding: 3%;
+    text-align: justify;
+    display: flex;    
+    flex-wrap: wrap;
     
-    .center {
-        width: 70%;
-        text-align: justify;
-        border: 3px white;
-    }
+}
 
-    .textocentral {
-        position: relative;
-        width: 80%;
-        font-family: "Arial";
+.motivacoes, .objetivo{
+    padding: 1%;
+    flex-basis: 100%;
+   
+}
+
+.imgMot{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+.tituloCuriosidade{
+    text-align: center;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+@media screen and(max-width: 768px) {
+    .titulo{
         font-size: large;
-        padding: 1%;
-        text-align: left;  
-  
     }
 
-    .primeira {
-        position: absolute;
-        top: 18.5%;
-        right: 1%;
-        float:right;
+    nav li a{
+        padding: 15px 20px;
     }
+
+    .motivacoes, .objetivo{
+        padding: 2%;
+        flex-basis: 100%;
+    }
+}
