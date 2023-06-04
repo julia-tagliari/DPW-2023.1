@@ -74,6 +74,21 @@ article{
     }
 }
 
+p::first-letter{
+    font-size: 120%;
+}
+
+p:only-child{
+    color: rgb(248, 223, 0);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 .gallery{
     display: inline-flex;
     margin-left: auto;
@@ -133,8 +148,8 @@ td a {
 }
 
 td a:hover {
-    background-color:brown;
-    color: aquamarine;   
+    background-color:rgb(248, 223, 0);
+    color: black;   
 }
 
 a {
@@ -149,8 +164,12 @@ a:hover {
 }
 
 .destaque{
-    color:rgb(248, 223, 0);
     font-weight:bolder;
+}
+
+.enfatizar{
+    color: rgb(248, 223, 0);
+    font-weight: bolder;
 }
 
 .imagem{
@@ -178,6 +197,10 @@ h2, h3, p{
 
 input[type="radio"]{
     margin-right:10px;
+}
+
+table, th, td {
+    border: 1px solid;
 }
 
 button{
