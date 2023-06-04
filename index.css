@@ -1,10 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header{
     text-align: center; 
-    position: static;
     width: 100%;
-    background-color:rgb(255, 248, 182);
-
+    background-color:rgb(255, 248, 182); 
 
 }
 
@@ -12,17 +15,22 @@ header{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: xxx-large;
     font-weight: bolder;
+    margin-top: 100px;
 }
 
 nav ul{
     list-style-type: none;
-    margin:0;
+    margin: 0;
     padding: 0;
     overflow:hidden; 
     background-color: black;
     top: 0;
+    left: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: larger;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 
 }
 nav li{
@@ -59,28 +67,151 @@ article{
     text-align: justify;
     display: flex;    
     flex-wrap: wrap;
-    
+    margin-top: 10px;
+
+    @media screen and (min-width: 769px) {
+        margin-top: 20x;
+    }
 }
 
-.motivacoes, .objetivo{
+.gallery{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria{
+    margin: 5px;
+    border: 1px solid #000000;
+    width: 180px;
+}
+
+.imggaleria{
+    width: 100%;
+    height: auto;
+}
+
+.galeria:hover{
+    border: 1px solid #777;
+}
+
+.imagem{
+    width: 70%
+}
+
+.descricao{
+    padding: 15px;
+    text-align: center;
+}
+
+.textos{
     padding: 1%;
     flex-basis: 100%;
+    font-size: large;
    
 }
 
-.imgMot{
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 0 auto;
-}
-
-
-
-.tituloCuriosidade{
+.tituloPaginas{
     text-align: center;
     font-size: x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+td {
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+    padding: 15px;
+}
+
+td a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+td a:hover {
+    background-color:brown;
+    color: aquamarine;   
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+}
+
+a:hover {
+    background-color:rgb(248, 223, 0);
+    color: black;
+}
+
+.destaque{
+    color:rgb(248, 223, 0);
+    font-weight:bolder;
+}
+
+.imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.quiz{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    background-color: #000000;
+    color: aliceblue;
+}
+
+h2, h3, p{
+    margin: 0;
+}
+
+input[type="radio"]{
+    margin-right:10px;
+}
+
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(248, 223, 0);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(248, 223, 0);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.alternativas{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 @media screen and(max-width: 768px) {
@@ -89,11 +220,25 @@ article{
     }
 
     nav li a{
-        padding: 15px 20px;
+        padding: 2% 10%;
     }
 
-    .motivacoes, .objetivo{
+    .textos{
         padding: 2%;
         flex-basis: 100%;
     }
+
+    .imagem{
+        width: 100%;
+    }
+    
+    .quiz{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button{
+        width: 100%;
+    }
 }
+
