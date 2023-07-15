@@ -251,4 +251,3 @@ embaralharPerguntas();
 exibirPergunta(indicePergunta);
 
 });
-

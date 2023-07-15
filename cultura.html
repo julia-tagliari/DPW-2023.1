@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="https://img2.gratispng.com/20180131/wgw/kisspng-common-sunflower-clip-art-sunflower-vector-5a71888ed72b27.3023692915173899668813.jpg">
     <script src="quiz.js"></script>
+    <script src="jogomemoria.js"></script>
 </head>
 
 
@@ -75,7 +76,7 @@
     <section class="cultura">
         
         <h2 class="tituloPaginas">Cultura</h2>
-        <div class="motivacoes">
+        <div class="textos">
             <h3>História e simbolismo:</h3><br>
                 <p>O girassol tem uma longa história de cultivo e é originário das Américas. Ele desempenhou um papel significativo nas culturas indígenas, como os astecas, que consideravam o girassol como um símbolo de adoração ao sol. O girassol também é frequentemente associado à felicidade, calor, vitalidade e energia positiva.</p><br><br>
             <h3>Arte e literatura:</h3><br>
@@ -134,8 +135,20 @@
                     </tr>
                 </table>
                 <br><br>
-            <h3>Websites e recursos online:</h3><br>
-                <p>Existem muitos recursos online disponíveis para explorar mais sobre a cultura do girassol. Websites especializados oferecem informações sobre o cultivo, os benefícios, as curiosidades e os aspectos simbólicos da planta. Além disso, você pode encontrar receitas, projetos de artesanato e até mesmo roteiros de viagem relacionados ao girassol. A Embrapa, por exemplo, é uma instituição de pesquisa e desenvolvimento em agricultura e pecuária no Brasil. O site da Embrapa oferece informações valiosas sobre o cultivo de girassóis, incluindo artigos, publicações, vídeos e manuais técnicos. <a href="https://www.embrapa.br/girassol" target="externo"><span class="destaque">(https://www.embrapa.br/)</span></a></p>
+                <div class="textos">
+                    <h3>Websites e recursos online:</h3><br>
+                    <p>Existem muitos recursos online disponíveis para explorar mais sobre a cultura do girassol. Websites especializados oferecem informações sobre o cultivo, os benefícios, as curiosidades e os aspectos simbólicos da planta. Além disso, você pode encontrar receitas, projetos de artesanato e até mesmo roteiros de viagem relacionados ao girassol. A Embrapa, por exemplo, é uma instituição de pesquisa e desenvolvimento em agricultura e pecuária no Brasil. O site da Embrapa oferece informações valiosas sobre o cultivo de girassóis, incluindo artigos, publicações, vídeos e manuais técnicos. <a href="https://www.embrapa.br/girassol" target="externo"><span class="destaque">(https://www.embrapa.br/)</span></a></p>              
+                </div>
+        </div>
+        <div class="canvas">
+            <br><br>
+              <h2 id="unirio" style="text-align: center;">Jogo da Memoria</h2>
+              <br>
+              <button id="botao-iniciar" onclick="iniciarJogo()">Começar o Jogo!</button>
+              <button id="botao-reiniciar" onclick="reiniciarJogo()" class="reiniciar">Reiniciar o Jogo!</button>
+              <canvas id="canvas" width="1200" height="800" class="canvas">
+              Seu navegador não suporta CANVAS
+              </canvas>
         </div>
     </section>
 </article>
@@ -161,9 +174,6 @@
         <option value="rgb(10, 10, 10)">Preto</option>
         <option value="rgb(150, 75, 0)">Marrom</option>
     </select>
-
-
-
+</div>
 </body>
-
 </html>
